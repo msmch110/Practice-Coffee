@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* 
+font-family: 'Archivo', sans-serif;
+font-family: 'Noto Sans JP', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* -------------------------------------------------
+General 全般
+------------------------------------------------- */
+.menu-area,
+.about-area,
+.location-area {
+  width: 100%;
+}
+.menu-area-head {
+  margin-top: 10px;
+  background-image: url(../img/menu.jpg);
+}
+.about-area-head {
+  background-image: url(../img/about.jpg);
+}
+.location-area-head {
+  background-image: url(../img/location.jpg);
+}
+.menu-area-head,
+.about-area-head,
+.location-area-head {
+  width: 100%;
+  height: 95px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area-head-title {
+  font-family: 'Archivo', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.menu-content-area,
+.about-content-area,
+.location-content-area {
+  padding: 0 16px;
+}
+.menu-content-box,
+.about-content-box,
+.location-content-box {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.menu-type,
+.about-content-title,
+.location-content-title {
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 40px auto 5px;
+  width: max-content;
+  position: relative;
+}
+.menu-type::after,
+.about-content-title::after,
+.location-content-title::after {
+  content: "";
+  display: block;
+  height: 6px;
+  width: initial;
+  background-color: #e00000;
+  position: relative;
+  top: 5px;
+}
+/* -------------------------------------------------
+Header
+------------------------------------------------- */
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.gnav-list {
+  display: flex;
+}
+.gnav-item a {
+  display: inline-block;
+  font-family: 'Archivo', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 35px;
+  padding: 25px 0;
+  text-shadow: 3px 2px 2px rgb(141, 141, 141);
+}
+.logo-mark {
+  display: block;
+}
+/* -------------------------------------------------
+Menu area
+------------------------------------------------- */
+.menu-content-area {
+  padding-bottom: 120px;
+}
+.menu-item dl {
+  font-family: 'Archivo', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu-name {
+  width: 88%;
+  height: 20px;
+  border-bottom: 1px dotted #333;
+  margin-top: 30px;
+}
+
+.about-content-area {
+  padding: 0 30px 80px;
+}
+.about-content-txt {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  margin-top: 32px;
+}
+.about-content-txt-left:first-child {
+  margin-top: 40px;
+}
+.read-more-box {
+  padding: 13px 0;
+  width: 155px;
+  text-align: center;
+  position: relative;
+  margin: 60px auto 0;
+}
+.read-more-box::before,
+.read-more-box::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 23px;
+  position: absolute;
+}
+.read-more-box::before {
+  border-top: 2px solid #e00000;
+  border-left: 2px solid #e00000;
+  top: 0;
+  left: 0;
+}
+.read-more-box::after {
+  border-bottom: 2px solid #e00000;
+  border-right: 2px solid #e00000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.read-more-box a {
+  font-family: 'Archivo', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+}
