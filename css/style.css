@@ -156,6 +156,10 @@ header {
 .logo-mark {
   display: block;
 }
+.logo-sub {
+  margin-left: 20px;
+  color: rgb(224, 224, 224);
+}
 @media screen and (min-width:768px) {
   .logo-mark {
     position: absolute;
