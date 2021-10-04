@@ -116,6 +116,7 @@ General 全般
     top: 10px;
   }
 }
+
 /* -------------------------------------------------
 Header
 ------------------------------------------------- */
@@ -159,6 +160,14 @@ header {
 .logo-sub {
   margin-left: 20px;
   color: rgb(224, 224, 224);
+}
+@media screen and (max-width:767px) {
+  .logo-mark {
+    width:80%;
+  }
+  .logo-sub {
+    font-size: 24px;
+  }
 }
 /* -------------------------------------------------
 Menu area
